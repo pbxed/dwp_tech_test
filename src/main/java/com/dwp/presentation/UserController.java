@@ -1,14 +1,16 @@
 package com.dwp.presentation;
 
+import com.dwp.data.model.User;
 import com.dwp.service.UserService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
+@Api
 @RestController
-@RequestMapping("/")
+@RequestMapping("/api")
 public class UserController {
 
     private final UserService userService;
@@ -18,8 +20,12 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping(path = "/users/{city}/{distance}")
-    public String getUsersByCityAndDistanceFromCity(@PathVariable(value = "city") String city, @PathVariable(value = "distance") float distance) {
-        return userService.getUsersByCityAndDistanceFromCity;
+    @GetMapping(path = "/users")
+    public List<User> getUsersByCityAndDistanceFromCity(
+            @RequestParam(value = "city") String city,
+            @RequestParam(value = "lat") double latitude,
+            @RequestParam(value = "long") double longitude,
+            @RequestParam(value = "dist") double distanceInMiles) {
+        return userService.getUsersByDistanceFromCoordinate(city, latitude, longitude, distanceInMiles);
     }
 }

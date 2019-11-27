@@ -1,10 +1,13 @@
 package com.dwp.data;
 
-import org.apache.catalina.User;
+
+import com.dwp.data.model.User;
 
 import java.util.List;
 
 public interface UserRepository {
 
-    List<User> getUsersByCityAndDistanceFromCity();
+    List<User> getUsers();
+
+    List<User> getUsersByCity(String city);
 }
