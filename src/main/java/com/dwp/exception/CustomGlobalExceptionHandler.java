@@ -1,4 +1,4 @@
-package com.dwp.error;
+package com.dwp.exception;
 
 
 import org.springframework.http.HttpHeaders;
