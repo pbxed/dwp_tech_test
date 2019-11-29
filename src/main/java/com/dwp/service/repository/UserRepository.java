@@ -1,4 +1,4 @@
-package com.dwp.data;
+package com.dwp.service.repository;
 
 
 import com.dwp.data.model.User;

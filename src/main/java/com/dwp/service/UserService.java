@@ -1,6 +1,6 @@
 package com.dwp.service;
 
-import com.dwp.data.UserRepository;
+import com.dwp.service.repository.UserRepository;
 import com.dwp.data.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

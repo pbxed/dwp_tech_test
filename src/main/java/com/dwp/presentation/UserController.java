@@ -3,7 +3,6 @@ package com.dwp.presentation;
 import com.dwp.data.model.User;
 import com.dwp.service.UserService;
 import io.swagger.annotations.Api;
-import org.hibernate.validator.constraints.Length;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;

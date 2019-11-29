@@ -1,6 +1,7 @@
 package com.dwp.data;
 
 import com.dwp.data.model.User;
+import com.dwp.service.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpHeaders;
