@@ -1,7 +1,6 @@
 # Technical Test - Associate Java Software Engineer (DWP)
 ***
-*Jordan Shenolikar*
-***
+
 ### Objective
 
 *Using the language of your choice please build your own API which calls the API at
