@@ -25,18 +25,19 @@ Clone the repository and run locally.
 
 Send a GET request to http://localhost:8080/api/users and include the following query parameters
 
-?city= (String)
-?lat= (double)
-?long= (double)
-?distance (double)
+?city= *(String)*
+?lat= *(double)*
+?long= *(double)*
+?distance *(double)*
 
 e.g for the case of retrieving all users marked as living in London or withing 50 miles the url would be:
+
 http://localhost:8080/api/users?city=London&lat=51.5074&long=0.1278&dist=50
 
-Where lat & long are the coordinates of London as per Google and 50 is the inclusion radius.
+Where lat & long are the coordinates of London as per Google and 50 is the inclusion radius in miles.
 
 ### Swagger
-Swagger UI has also been implemented and be found at
+Swagger UI has also been implemented and be found at:
 
 http://localhost:8080/swagger-ui.html#
 
